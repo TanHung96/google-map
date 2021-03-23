@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google map API</title>
+    <style>
+       
+    </style>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- jsFiddle will insert css and js -->
+</head>
+
+<body>
+    <div id="floating-panel">
+        <b>Start: </b>
+        <select id="start">
+           <option value="My house" id="myhouse">My house</option>
+            <option value="PHÂN HIỆU TRƯỜNG ĐH GTVT TẠI TP. HỒ CHÍ MINH" id="utc2">UTC2</option>
+        </select>
+        <b>End: </b>
+        <select id="end">
+          <option value="My house" id="myhouse">My house</option>
+          <option value="PHÂN HIỆU TRƯỜNG ĐH GTVT TẠI TP. HỒ CHÍ MINH" id="utc2">UTC2</option>
+        </select>
+    </div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+        async></script>
+        <script src="./index.js"></script>
+</body>
+
+</html>
